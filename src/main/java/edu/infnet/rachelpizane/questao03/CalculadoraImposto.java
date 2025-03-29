@@ -12,11 +12,11 @@ public class CalculadoraImposto {
     private String nome;
     private double salarioBruto;
 
-    public CalculadoraImposto(String nome, double salarioBruto) {
+    public CalculadoraImposto(String nome, double salarioBrutolMensal) {
         verificarValorPositivo(salarioBruto);
 
         this.nome = nome;
-        this.salarioBruto = salarioBruto;
+        this.salarioBruto = salarioBrutolMensal * 12;
     }
 
     public double calcularSalarioLiquido() {
@@ -39,7 +39,7 @@ public class CalculadoraImposto {
     }
 
     public String exibirDetalhes() {
-        return String.format("Nome: %s %nSalário Bruto: R$ %.2f %nValor do Imposto: R$ %.2f %nSalário Líquido: R$ %.2f", nome, salarioBruto, calcularValorImposto(), calcularSalarioLiquido());
+        return String.format("Nome: %s %nSalário Bruto Anual: R$ %.2f %nSalário Líquido Anual: R$ %.2f %nValor do Imposto: R$ %.2f", nome, salarioBruto, calcularValorImposto(), calcularSalarioLiquido());
     }
 
     private void verificarValorPositivo(double valor) {

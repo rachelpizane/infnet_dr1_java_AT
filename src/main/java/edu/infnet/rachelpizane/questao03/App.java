@@ -11,7 +11,7 @@ public class App {
         System.out.print("Informe o seu nome: ");
         String nome = scanner.nextLine();
         
-        String mensagemInput = "Informe o seu salário bruto anual: ";
+        String mensagemInput = "Informe o seu salário bruto mensal: ";
         System.out.print(mensagemInput);
         double salarioBrutoAnual = scanner.nextDouble();
 
@@ -25,7 +25,7 @@ public class App {
 
         System.out.println("\nINFORMAÇÕES DO IMPOSTO:");
         System.out.println(calculadoraImposto.exibirDetalhes());
-        
+
         System.out.println("\n[FIM DO PROGRAMA]");
     }
 
