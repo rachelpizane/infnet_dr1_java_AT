@@ -9,7 +9,6 @@ public class Chat {
     private String[] usuarios;
     private Mensagem[] historico = new Mensagem[MAX_MENSAGENS];
     
-
     public Chat(String[] usuarios) {
         this.usuarios = usuarios;
     }
@@ -34,6 +33,7 @@ public class Chat {
                     mensagemEnviada = true;
                 }
             }
+
         System.out.println("=== CHAT FINALIZADO ===\n\n");
     }
 
