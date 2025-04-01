@@ -7,7 +7,7 @@ public class App {
         final String CAMINHO_COMPRAS = "src\\main\\resources\\compras.txt";
         final String REGEX = "^[a-zA-ZÀ-ÿ\\s]+;\\d+;\\d+([.,]\\d{2})?$";
 
-        Scanner input = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
         System.out.println("=== SISTEMA DE CONTROLE DE COMPRAS ===\n");
         System.out.println("Registre abaixo as três compras realizadas.");
@@ -18,7 +18,7 @@ public class App {
             String compra = "";
             while(!compra.matches(REGEX)) {
                 System.out.printf("Digite a %dª compra: ", i + 1);
-                compra = input.nextLine();
+                compra = scanner.nextLine();
 
                 if (!compra.matches(REGEX)) {
                     System.out.println("[ERRO] Formato inválido. Tente novamente.");

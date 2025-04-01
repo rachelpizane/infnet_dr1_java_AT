@@ -4,3 +4,6 @@ fone de ouvido;300;249.90
 arroz;2;3.50
 feijao;1;4.99
 leite;3;3
+chocolate;37;8.90
+sorvete;2;21.90
+pasta de dente;3;5

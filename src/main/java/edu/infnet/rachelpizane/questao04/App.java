@@ -18,7 +18,7 @@ public class App {
 
         while(verificarValor(valorEmprestimo)){
             System.out.println("[ERRO] Valor inválido.");
-            System.out.println(mensagemInput);
+            System.out.print(mensagemInput);
             valorEmprestimo = scanner.nextDouble();
         }
 
@@ -28,7 +28,7 @@ public class App {
 
         while(parcelas < 6 || parcelas > 48) {
             System.out.println("[ERRO] Número de parcelas inválido.");
-            System.out.println(mensagemInput);
+            System.out.print(mensagemInput);
             parcelas = scanner.nextInt();
         }
 

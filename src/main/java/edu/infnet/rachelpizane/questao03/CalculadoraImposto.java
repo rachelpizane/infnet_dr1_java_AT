@@ -39,7 +39,7 @@ public class CalculadoraImposto {
     }
 
     public String exibirDetalhes() {
-        return String.format("Nome: %s %nSalário Bruto Anual: R$ %.2f %nSalário Líquido Anual: R$ %.2f %nValor do Imposto: R$ %.2f", nome, salarioBruto, calcularValorImposto(), calcularSalarioLiquido());
+        return String.format("Nome: %s %nSalário Bruto Anual: R$ %.2f %nSalário Líquido Anual: R$ %.2f %nValor do Imposto: R$ %.2f", nome, salarioBruto, calcularSalarioLiquido(), calcularValorImposto());
     }
 
     private void verificarValorPositivo(double valor) {
